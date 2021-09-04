@@ -36,7 +36,7 @@
                       class="white--text"
                       fab
                       elevation="5"
-                      href="http://image-better-upper.mizucode.com"
+                      href="https://github.com/mizucode"
                     >
                       check it out >
                     </v-btn>
@@ -115,7 +115,7 @@
                       class="white--text"
                       fab
                       elevation="5"
-                      href="http://image-better-upper.mizucode.com"
+                      href="mailto:sophie.mizucode.com"
                     >
                       send me <br>
                       an email
@@ -157,7 +157,7 @@
                       class="white--text"
                       fab
                       elevation="5"
-                      href="http://image-better-upper.mizucode.com"
+                      href="https://www.linkedin.com/in/sophie-as/"
                     >
                       message me <br>
                       on linkedin
