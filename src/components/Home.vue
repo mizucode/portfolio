@@ -1,25 +1,19 @@
 <template>
-  <v-container>
+  <v-container style="padding-right: 3em; padding-left: 3em">
     <v-row class="text-center">
       <v-col cols="12">
-        <h1 class="display-2 font-weight-bold mb-3" style="padding-top: 1em">
-          Welcome to Vuetify
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br />please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank"
-            >Discord Community</a
-          >
-        </p>
+        <v-banner class="mx-auto" max-width="300" height="200">
+          <v-img id="ink-brush" :src="require('../assets/logo1.svg')">
+          </v-img>
+        </v-banner>
       </v-col>
-      <v-col v-for="n in 5" :key="n" cols="4">
+      <v-col cols="4">
         <v-hover v-slot="{ hover }">
-          <v-card class="mx-auto" max-width="344" height="200">
+          <v-card class="mx-auto" max-width="344" height="217">
             <v-img
               :aspect-ratio="16 / 12"
-              src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+              :src="require('../assets/github.svg')"
+              height="100%"
             >
               <v-scroll-x-reverse-transition>
                 <div
@@ -27,37 +21,175 @@
                   class="
                     d-flex
                     transition-fast-in-fast-out
-                    orange
-                    darken-2
                     v-card--reveal
-                    text-h2
                     white--text
                   "
-                  style="height: 100%"
+                  style="height: 100%; background-color: #8eb894"
                 >
-                  $14.99
-                  <v-btn
-                    auto
-                    color="orange"
-                    class="white--text"
-                    fab
-                    elevation="5"
-                    href="http://image-better-upper.mizucode.com"
-                  >
-                    check it out >
-                  </v-btn>
+                  <v-card-text align="center">
+                    <div class="my-4 text-subtitle-1">
+                      take a look at the code behind my projects on github
+                    </div>
+                    <v-btn
+                      auto
+                      color="#608866"
+                      class="white--text"
+                      fab
+                      elevation="5"
+                      href="http://image-better-upper.mizucode.com"
+                    >
+                      check it out >
+                    </v-btn>
+                  </v-card-text>
                 </div>
               </v-scroll-x-reverse-transition>
             </v-img>
           </v-card>
         </v-hover>
       </v-col>
+      <v-col cols="4">
+        <v-hover v-slot="{ hover }">
+          <v-card class="mx-auto" max-width="344" height="217">
+            <v-img
+              :aspect-ratio="16 / 12"
+              :src="require('../assets/dnn_panda1.png')"
+              height="100%"
+            >
+              <v-scroll-x-reverse-transition>
+                <div
+                  v-if="hover"
+                  class="
+                    d-flex
+                    transition-fast-in-fast-out
+                    v-card--reveal
+                    white--text
+                  "
+                  style="height: 100%; background-color: #8eb894"
+                >
+                  <v-card-text align="center">
+                    <div class="my-4 text-subtitle-1">
+                      image-better-upper is an app to transform old images into
+                      high-resolution png files using Open CV's ESPCN model
+                    </div>
+                    <v-btn
+                      color="#608866"
+                      class="white--text"
+                      fab
+                      small
+                      href="https://image-better-upper.mizucode.com"
+                    >
+                      check it out >
+                    </v-btn>
+                  </v-card-text>
+                </div>
+              </v-scroll-x-reverse-transition>
+            </v-img>
+          </v-card>
+        </v-hover>
+      </v-col>
+
+            <v-col cols="4">
+                <v-hover v-slot="{ hover }">
+          <v-card class="pa-2" max-width="144" height="100">
+            <v-img
+              :aspect-ratio="16 / 12"
+              :src="require('../assets/email_icon.jpg')"
+              height="100%"
+            >
+              <v-scroll-x-reverse-transition>
+                <div
+                  v-if="hover"
+                  class="
+                    d-flex
+                    transition-fast-in-fast-out
+                    v-card--reveal
+                    white--text
+                  "
+                  style="height: 100%; background-color: #8eb894"
+                >
+                  <v-card-text>
+                    
+                    <v-btn
+                      auto
+                      color="#608866"
+                      class="white--text"
+                      fab
+                      elevation="5"
+                      href="http://image-better-upper.mizucode.com"
+                    >
+                      send me <br>
+                      an email
+                    </v-btn>
+                  </v-card-text>
+                </div>
+              </v-scroll-x-reverse-transition>
+            </v-img>
+          </v-card>
+        </v-hover>
+           <v-spacer>
+
+           </v-spacer>
+           <div><p>   </p></div>
+  
+        <v-hover v-slot="{ hover }">
+          <v-card class="pa-2" max-width="144" height="100">
+            <v-img
+              :aspect-ratio="16 / 12"
+              :src="require('../assets/linked-28.png')"
+              height="100%"
+            >
+              <v-scroll-x-reverse-transition>
+                <div
+                  v-if="hover"
+                  class="
+                    d-flex
+                    transition-fast-in-fast-out
+                    v-card--reveal
+                    white--text
+                  "
+                  style="height: 100%; background-color: #8eb894"
+                >
+                  <v-card-text>
+                    
+                    <v-btn
+                      auto
+                      color="#608866"
+                      class="white--text"
+                      fab
+                      elevation="5"
+                      href="http://image-better-upper.mizucode.com"
+                    >
+                      message me <br>
+                      on linkedin
+                    </v-btn>
+                  </v-card-text>
+                </div>
+              </v-scroll-x-reverse-transition>
+            </v-img>
+          </v-card>
+        </v-hover>
+     
+          </v-col>
     </v-row>
   </v-container>
 </template>
-
 <script>
+import anime from "animejs/lib/anime.es.js";
+
 export default {
+  created() {
+    anime({
+      targets: ".ink-brush .path",
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: "easeInOutSine",
+      duration: 3500,
+      delay: function (el, i) {
+        return i * 250;
+      },
+      direction: "alternate",
+      loop: true,
+    });
+  },
   data: () => ({
     hover: true,
   }),
