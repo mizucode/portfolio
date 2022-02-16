@@ -61,7 +61,7 @@
                         v-model="message"
                         outlined
                         type="text"
-                        placeholder="What would you like to discuss?"
+                        placeholder="Your Message"
                       >
                       </textarea>
                     </v-col>

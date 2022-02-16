@@ -1,7 +1,10 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "name": "mizucode-portfolio",
+  "description": "A collection free to use games and tools.",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -34,7 +37,6 @@
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
     "vue-cli-plugin-vuetify": "~2.4.2",
-    "vue-notion": "^1.2.1",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.7.3"
   }
