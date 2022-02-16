@@ -49,7 +49,7 @@
                       color="#BD13FF"
                       class="white--text"
                       small
-                      href="https://imagebetter.sophicodes.com"
+                      href="https://imagebetter.sophiecodes.com/"
                     >
                       <v-icon color="#000013">mdi-arrow-right</v-icon>
                     </v-btn>
