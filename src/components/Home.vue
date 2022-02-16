@@ -1,18 +1,31 @@
 <template>
-  <v-container style="padding-right: 3em; padding-left: 3em">
+  <v-container
+    style="padding-right: 3em; padding-left: 3em; background-color: #000013"
+  >
     <v-row class="text-center">
       <v-col cols="12">
-        <v-banner class="mx-auto" max-width="300" height="200">
-          <v-img id="ink-brush" :src="require('../assets/logo1.svg')">
-          </v-img>
+        <v-banner
+          class="mx-auto"
+          max-width="300"
+          height="200"
+          style="padding: 35px !important"
+        >
+          <vue-typer
+            :src="require('../assets/style.css')"
+            :text="['<sophiecodes>']"
+            :pre-type-delay="70"
+            :type-delay="70"
+            :pre-erase-delay="90000"
+            caret-animation="blink"
+          ></vue-typer>
         </v-banner>
       </v-col>
-      <v-col cols="4">
+      <v-col cols="6">
         <v-hover v-slot="{ hover }">
           <v-card class="mx-auto" max-width="344" height="217">
             <v-img
               :aspect-ratio="16 / 12"
-              :src="require('../assets/github.svg')"
+              :src="require('../assets/butterfly.png')"
               height="100%"
             >
               <v-scroll-x-reverse-transition>
@@ -24,61 +37,21 @@
                     v-card--reveal
                     white--text
                   "
-                  style="height: 100%; background-color: #8eb894"
+                  style="height: 100%"
                 >
                   <v-card-text align="center">
                     <div class="my-4 text-subtitle-1">
-                      take a look at the code behind my projects on github
+                      Image-better-upper transforms <br />small images into
+                      high-resolution <br />
+                      png files using Open CV's ESPCN
                     </div>
                     <v-btn
-                      auto
-                      color="#608866"
+                      color="#BD13FF"
                       class="white--text"
-                      fab
-                      elevation="5"
-                      href="https://github.com/mizucode"
-                    >
-                      check it out >
-                    </v-btn>
-                  </v-card-text>
-                </div>
-              </v-scroll-x-reverse-transition>
-            </v-img>
-          </v-card>
-        </v-hover>
-      </v-col>
-      <v-col cols="4">
-        <v-hover v-slot="{ hover }">
-          <v-card class="mx-auto" max-width="344" height="217">
-            <v-img
-              :aspect-ratio="16 / 12"
-              :src="require('../assets/dnn_panda1.png')"
-              height="100%"
-            >
-              <v-scroll-x-reverse-transition>
-                <div
-                  v-if="hover"
-                  class="
-                    d-flex
-                    transition-fast-in-fast-out
-                    v-card--reveal
-                    white--text
-                  "
-                  style="height: 100%; background-color: #8eb894"
-                >
-                  <v-card-text align="center">
-                    <div class="my-4 text-subtitle-1">
-                      image-better-upper is an app to transform old images into
-                      high-resolution png files using Open CV's ESPCN model
-                    </div>
-                    <v-btn
-                      color="#608866"
-                      class="white--text"
-                      fab
                       small
-                      href="https://image-better-upper.mizucode.com"
+                      href="https://imagebetter.sophicodes.com"
                     >
-                      check it out >
+                      <v-icon color="#000013">mdi-arrow-right</v-icon>
                     </v-btn>
                   </v-card-text>
                 </div>
@@ -87,55 +60,12 @@
           </v-card>
         </v-hover>
       </v-col>
-
-            <v-col cols="4">
-                <v-hover v-slot="{ hover }">
-          <v-card class="pa-2" max-width="144" height="100">
-            <v-img
-              :aspect-ratio="16 / 12"
-              :src="require('../assets/email_icon.jpg')"
-              height="100%"
-            >
-              <v-scroll-x-reverse-transition>
-                <div
-                  v-if="hover"
-                  class="
-                    d-flex
-                    transition-fast-in-fast-out
-                    v-card--reveal
-                    white--text
-                  "
-                  style="height: 100%; background-color: #8eb894"
-                >
-                  <v-card-text>
-                    
-                    <v-btn
-                      auto
-                      color="#608866"
-                      class="white--text"
-                      fab
-                      elevation="5"
-                      href="mailto:sophie.mizucode.com"
-                    >
-                      send me <br>
-                      an email
-                    </v-btn>
-                  </v-card-text>
-                </div>
-              </v-scroll-x-reverse-transition>
-            </v-img>
-          </v-card>
-        </v-hover>
-           <v-spacer>
-
-           </v-spacer>
-           <div><p>   </p></div>
-  
+      <v-col cols="6">
         <v-hover v-slot="{ hover }">
-          <v-card class="pa-2" max-width="144" height="100">
+          <v-card class="mx-auto" max-width="344" height="217">
             <v-img
               :aspect-ratio="16 / 12"
-              :src="require('../assets/linked-28.png')"
+              :src="require('../assets/github.png')"
               height="100%"
             >
               <v-scroll-x-reverse-transition>
@@ -147,20 +77,19 @@
                     v-card--reveal
                     white--text
                   "
-                  style="height: 100%; background-color: #8eb894"
+                  style="height: 100%"
                 >
-                  <v-card-text>
-                    
+                  <v-card-text align="center">
+                    <div class="my-4 text-subtitle-1">
+                      <br />The code behind it all <br />(my github)
+                    </div>
                     <v-btn
-                      auto
-                      color="#608866"
+                      color="#BD13FF"
                       class="white--text"
-                      fab
-                      elevation="5"
-                      href="https://www.linkedin.com/in/sophie-as/"
+                      small
+                      href="https://github.com/sophie-arsenault"
                     >
-                      message me <br>
-                      on linkedin
+                      <v-icon color="#000013">mdi-arrow-right</v-icon>
                     </v-btn>
                   </v-card-text>
                 </div>
@@ -168,15 +97,23 @@
             </v-img>
           </v-card>
         </v-hover>
-     
-          </v-col>
+      </v-col>
     </v-row>
   </v-container>
 </template>
+
 <script>
-export default {
+import Vue from "vue";
+import Vuetify from "vuetify/lib";
+import VueTyper from "vue-typer";
+
+Vue.use(Vuetify);
+Vue.use(VueTyper);
+
+export default new Vuetify({
+  theme: { dark: true },
   data: () => ({
     hover: true,
   }),
-};
+});
 </script>
