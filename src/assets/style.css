@@ -1,0 +1,9 @@
+.vue-typer {
+  font-family: monospace;
+}
+
+.vue-typer .custom.char.typed {
+    color: #0088FF;
+    font-size: 25px;
+  }
+
